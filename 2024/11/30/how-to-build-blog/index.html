@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+
+    
+
+    <!-- 渲染优化 -->
+    <meta name="renderer" content="webkit">
+    <meta name="force-rendering" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="HandheldFriendly" content="True" >
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!--icon-->
+
+    
+    
+    
+    
+    
+
+
+    <!-- meta -->
+
+
+<title>本博客搭建方法 | Limin Hao&#39;s Blog</title>
+
+
+    <meta name="keywords" content="Hexo, 博客搭建">
+
+
+
+
+    <!-- OpenGraph -->
+ 
+    <meta name="description" content="欢迎来到我的博客世界:)本文章记录网站搭建的步骤，给想要拥有个人博客的同学一个参考，同时也给自己备忘。本文章适合有一定编程基础的同学阅读，可能会给完全没有编程概念的同学造成疑惑。 开发环境 Platform: MacBook Pro (M1 Pro) OS: macOS Sequoia Editor: VS Code  hexo 安装hexo介绍macOS系统上一般安装有brew包管理工具，下面介">
+<meta property="og:type" content="article">
+<meta property="og:title" content="本博客搭建方法">
+<meta property="og:url" content="https://haolimin01.github.io/2024/11/30/how-to-build-blog/index.html">
+<meta property="og:site_name" content="Limin Hao&#39;s Blog">
+<meta property="og:description" content="欢迎来到我的博客世界:)本文章记录网站搭建的步骤，给想要拥有个人博客的同学一个参考，同时也给自己备忘。本文章适合有一定编程基础的同学阅读，可能会给完全没有编程概念的同学造成疑惑。 开发环境 Platform: MacBook Pro (M1 Pro) OS: macOS Sequoia Editor: VS Code  hexo 安装hexo介绍macOS系统上一般安装有brew包管理工具，下面介">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2024-11-30T07:38:30.000Z">
+<meta property="article:modified_time" content="2024-11-30T09:20:58.012Z">
+<meta property="article:author" content="Limin Hao">
+<meta property="article:tag" content="Hexo">
+<meta property="article:tag" content="博客搭建">
+<meta name="twitter:card" content="summary_large_image">
+
+
+    
+<link rel="stylesheet" href="/css/style/main.css">
+ 
+
+    
+    
+    
+
+    
+    
+<link rel="stylesheet" href="/css/style/dark.css">
+
+    
+<script src="/js/darkmode.js"></script>
+
+
+
+     
+
+    <!-- custom head -->
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+    <body>
+        <div id="app" tabindex="-1">
+            <header class="header">
+    <div class="header__left">
+        <a href="/" class="button">
+            <span class="logo__text">Home</span>
+        </a>
+    </div>
+    <div class="header__right">
+        
+            <div class="navbar__menus">
+                
+                    <a href="/" class="navbar-menu button">首页</a>
+                
+                    <a href="/tags/" class="navbar-menu button">标签</a>
+                
+                    <a href="/archives/" class="navbar-menu button">归档</a>
+                
+                    <a href="/about/" class="navbar-menu button">关于</a>
+                
+            </div>
+        
+        
+        
+
+        
+        
+    <a href="javaScript:void(0);" id="btn-toggle-dark">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+    </a>
+
+
+        
+            <a class="dropdown-icon button" id="btn-dropdown" tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width='24' height='24' fill="none" stroke="currentColor" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round"><path fill="currentColor" d="M3.314,4.8h13.372c0.41,0,0.743-0.333,0.743-0.743c0-0.41-0.333-0.743-0.743-0.743H3.314c-0.41,0-0.743,0.333-0.743,0.743C2.571,4.467,2.904,4.8,3.314,4.8z M16.686,15.2H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,15.2,16.686,15.2z M16.686,9.257H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,9.257,16.686,9.257z"></path></svg></a>
+            <div class="dropdown-menus" id="dropdown-menus">
+                
+                    <a href="/" class="dropdown-menu button">首页</a>
+                
+                    <a href="/tags/" class="dropdown-menu button">标签</a>
+                
+                    <a href="/archives/" class="dropdown-menu button">归档</a>
+                
+                    <a href="/about/" class="dropdown-menu button">关于</a>
+                
+            </div>
+        
+    </div>
+</header>
+
+
+            <main class="main">
+    
+
+<div class="post-title">
+    <h1 class="post-title__text">
+        本博客搭建方法
+    </h1>
+    <div class="post-title__meta">
+        <a href="/archives/2024/11/" class="post-meta__date button">2024-11-30</a>
+        
+ 
+        
+    
+    
+
+
+ 
+
+ 
+    </div>
+</div>
+
+
+
+<article class="post content-card">
+    <div class="post__header"></div>
+    <div class="post__content">
+        <p>欢迎来到我的博客世界:)<br>本文章记录网站搭建的步骤，给想要拥有个人博客的同学一个参考，同时也给自己备忘。<br>本文章适合有一定编程基础的同学阅读，可能会给完全没有编程概念的同学造成疑惑。</p>
+<h2 id="开发环境"><a href="#开发环境" class="headerlink" title="开发环境"></a>开发环境</h2><ul>
+<li>Platform: MacBook Pro (M1 Pro)</li>
+<li>OS: macOS Sequoia</li>
+<li>Editor: VS Code</li>
+</ul>
+<h2 id="hexo-安装"><a href="#hexo-安装" class="headerlink" title="hexo 安装"></a>hexo 安装</h2><p><a target="_blank" rel="noopener" href="https://hexo.io/">hexo介绍</a><br>macOS系统上一般安装有<code>brew</code>包管理工具，下面介绍使用<code>brew</code>安装<code>hexo</code>的步骤。</p>
+<ul>
+<li>安装<code>git</code>: <code>brew install git</code></li>
+<li>安装<code>node</code>: <code>brew install node</code> (version 10.9.0)</li>
+<li>安装<code>hexo</code>: <code>brew install hexo-cli -g</code> (version 4.3.0)</li>
+</ul>
+<h2 id="创建博客"><a href="#创建博客" class="headerlink" title="创建博客"></a>创建博客</h2><p>开发环境都已经准备好了，下面是博客的创建过程。</p>
+<ul>
+<li>项目初始化: <code>hexo init blog</code> (blog是我的项目名，可以改成任意自己喜欢的名字)</li>
+<li>执行命令: <code>cd blog; npm install</code></li>
+<li>博客启动: <code>hexo server</code> 运行完这条命令后，会监听本地的<code>4000</code>端口，在任意浏览器网址框中输入 <code>localhost:4000</code> 并回车，即可看到初始的页面</li>
+</ul>
+<h2 id="配置主题"><a href="#配置主题" class="headerlink" title="配置主题"></a>配置主题</h2><p><a target="_blank" rel="noopener" href="https://hexo.io/themes/">hexo主题集合</a> 有非常多漂亮精美的主题，可以选择一个自己喜欢的主题。<br>本人喜欢 <a target="_blank" rel="noopener" href="https://github.com/ChrAlpha/hexo-theme-cards">hexo cards</a>，下面介绍如何接入该主题。</p>
+<ul>
+<li>执行命令: <code>cd blog; git clone https://github.com/ChrAlpha/hexo-theme-cards.git themes/cards</code></li>
+<li>修改主题配置: 打开 <code>blog</code> 目录下的 <code>_config.yml</code> 文件，将原来的 <code>theme: landscape</code> 更改为 <code>theme: cards</code></li>
+<li>重新执行命令 <code>hexo server</code> 刷新浏览器就可以看到更新后的漂亮主题</li>
+<li>在 <code>blog/themes/cards/_config.yml</code> 中修改某些字段，可以更改 cards 主题显示的内容，参考 <a target="_blank" rel="noopener" href="https://theme-cards.ichr.me/">字段含义</a></li>
+</ul>
+<h2 id="配置-GitHub-仓库"><a href="#配置-GitHub-仓库" class="headerlink" title="配置 GitHub 仓库"></a>配置 GitHub 仓库</h2><ul>
+<li>在自己的GitHub主页创建仓库: <code>yourname.github.io</code> (注意，yourname 是自己GitHub用户名，后面的 .github.io 必须有)</li>
+<li>在 <code>blog/_config.yml</code> 文件最后的 <code>deploy</code> 字段，修改或添加如下内容<blockquote>
+<pre><code>deploy:
+  type: git
+  repo: git@github.com:yourname/yourname.github.io.git
+  branch: master
+</code></pre>
+</blockquote>
+</li>
+<li>执行命令: <code>hexo clean; hexo generate; hexo deploy</code> 即可将本地内容推送到远程GitHub仓库中</li>
+</ul>
+<h2 id="创建标签页-仅一次"><a href="#创建标签页-仅一次" class="headerlink" title="创建标签页 (仅一次)"></a>创建标签页 (仅一次)</h2><ol>
+<li><code>cd blog</code></li>
+<li><code>hexo new page tags</code></li>
+<li>打开 <code>blog/source/tags/index.md</code> 文件，在<code>date: xxx</code>下一行添加内容 <code>layout: tag</code></li>
+</ol>
+<h2 id="创建新的推文-post"><a href="#创建新的推文-post" class="headerlink" title="创建新的推文 (post)"></a>创建新的推文 (post)</h2><ol>
+<li><code>cd blog</code></li>
+<li><code>hexo new &quot;your-post-name&quot;</code></li>
+<li>在 <code>blog/source/_posts</code> 目录下可以看到 <code>your-post-name.md</code> 文件，这是一个 <a target="_blank" rel="noopener" href="https://markdown.com.cn/basic-syntax/">Markdown</a> 格式的文件。Markdown是目前非常流行的一种文档格式，可以轻松的表示内容之间的层级关系以及各种修饰。</li>
+<li>编辑完成该文件后，在 <code>blog</code> 目录执行 <code>hexo server</code> 即可在本地浏览器看到修改后的内容</li>
+<li>确认显示没有错误之后，推送到 GitHub 端 <code>hexo clean; hexo generate; hexo deploy</code></li>
+<li>打开网页 <code>yourname.github.io</code> 即可看到自己编辑的内容</li>
+</ol>
+<h2 id="创建新的页面-page"><a href="#创建新的页面-page" class="headerlink" title="创建新的页面 (page)"></a>创建新的页面 (page)</h2><ol>
+<li><code>cd blog</code></li>
+<li><code>hexo new page &quot;your-page-name&quot;</code></li>
+<li>在 <code>blog/source</code> 目录下可以看到多了一个文件夹 <code>your-page-name</code>，在 <code>your-page-name/index.md</code> 中编辑自己想要的内容</li>
+<li>同样执行 <code>hexo server</code> 在本地看运行的效果</li>
+<li>推送到 GitHub: <code>hexo clean; hexo generate; hexo deploy</code></li>
+<li>打开网页 <code>yourname.github.io</code> 即可看到自己编辑的内容</li>
+</ol>
+
+    </div>
+    
+    <div class="post__license">
+        <p>
+            <strong>Author: </strong>Limin Hao
+        </p>
+        <p>
+            <strong>
+                Permalink: 
+            </strong>
+            <a href="https://haolimin01.github.io/2024/11/30/how-to-build-blog/">https://haolimin01.github.io/2024/11/30/how-to-build-blog/</a>
+        </p>
+        
+    </div>
+ 
+    <div class="post-footer__meta"><p>updated at 2024-11-30</p></div> 
+    <div class="post-entry__tags"><a href="/tags/Hexo/" class="post-tags__link button"># Hexo</a><a href="/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" class="post-tags__link button"># 博客搭建</a></div> 
+</article>
+
+
+
+
+
+
+</main>
+
+            <footer class="footer">
+    
+    
+
+
+    
+     
+ 
+
+ 
+    
+        
+        <p class="footer-copyright">
+            Copyright © 2024&nbsp;-&nbsp;2024 <a href="/">Limin Hao&#39;s Blog</a>
+        </p>
+    
+    
+    <p>Powered by <a href="https://hexo.io" target="_blank">Hexo</a> | Theme - <a href="https://github.com/ChrAlpha/hexo-theme-cards" target="_blank">Cards</a></p>
+</footer>
+
+        </div>
+         
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+    
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+    </body>
+</html>
